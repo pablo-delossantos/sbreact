@@ -19,3 +19,23 @@ return (
   </h1>
 );
 ```
+
+### Renderizado condicional
+
+> En React, no hay una sintaxis especial para escribir condicionales.
+
+## El uso de los Hooks
+
+Las funciones que comienzan con use se llaman _Hooks_. `useState` **es un Hook nativo dentro de React**. Puedes encontrar otros Hooks nativos en la referencia de la API de React. También puedes escribir tus propios Hooks mediante la combinación de otros existentes.
+
+Los Hooks son más restrictivos que las funciones regulares. **Solo puedes llamar a los Hooks en el primer nivel de tus componentes** (u otros Hooks). Si quisieras utilizar `useState` en una condicional o en un bucle, extrae un nuevo componente y ponlo ahí.
+
+### Props
+
+Las props son la **colección de datos** que un componente recibe del contenedor padre, y que pueden usarse para definir los elementos de React que retornará el componente.
+
+En términos prácticos, si un componente necesita recibir información para funcionar, la recibe vía props.
+
+## Compratir datos entre componentes
+
+> Ver: «levantar el estado». Al mover el estado hacia arriba, lo compartimos entre componentes.
